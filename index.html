@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>XVs</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+  <button id="miBoton" onclick="mostrarFoto()">👑</button>
+
+  <!-- Corrige la ruta con barras normales y sin espacios -->
+  <img id="miFoto" src="colegio/jimena.jpg">
+
+
+  <script>
+    function mostrarFoto() {
+      const boton = document.getElementById('miBoton');
+      const foto = document.getElementById('miFoto');
+
+      boton.classList.add('ocultar');
+      foto.classList.add('visible');
+    }
+  </script>
+
+</body>
+</html>
